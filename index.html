@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mil_stylesheet.css"/>
+        <script type="text/javascript" src="mil_functions.js"></script>
+        <style>
+
+        </style>
+        <title> Military Dress-Up Game</title>
+    </head>
+        <header class="title aftitle" > Air Force Dress-Up Game </header>
+        <body style="background: var(--allbackground)"> 
+            <div class="sidebar afsidebar">
+                <button class="dropdown-btn">Skin Color</button>
+                  <div class="dropdown-container">
+                    <span class="dot" style="background-color: rgb(230,183,145);"></span>
+                    <span class="dot"style="background-color: rgb(139,94,67);"></span>
+                    <span class="dot"style="background-color: rgb(61,28,18);"></span>
+                  </div>
+            </div>
+           
+            
+            <main>
+
+
+            </main>
+          <!--  <footer class="home-footer-pad footer" top="110%"> July 2023. Lora Wargo. Hosted Through GitHub Pages.</footer>-->
+        </body>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+            } else {
+            dropdownContent.style.display = "block";
+            }
+        });
+        }
+    </script>
+</html>
