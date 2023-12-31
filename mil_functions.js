@@ -1,14 +1,27 @@
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+function baseChangeL() {
+    var l = document.getElementById("LoraBase");
+    var a = document.getElementById("AbiBase");
+    var k = document.getElementById("KenBase");
+    l.style.visibility = "visibility";
+    a.style.visibility = "hidden";
+    k.style.visibility = "hidden";
+    console.log("base changed to LoraBase");
+}
+function baseChangeA() {
+    var l = document.getElementById("LoraBase");
+    var a = document.getElementById("AbiBase");
+    var k = document.getElementById("KenBase");
+    l.style.visibility = "hidden";
+    a.style.visibility = "visibility";
+    k.style.visibility = "hidden";
+    console.log("base changed to Abi Base");
+}
+function baseChangeK() {
+    var l = document.getElementById("LoraBase");
+    var a = document.getElementById("AbiBase");
+    var k = document.getElementById("KenBase");
+    l.style.visibility = "hidden";
+    a.style.visibility = "hidden";
+    k.style.visibility = "visibility";
+    console.log("base changed to Ken Base");
 }
